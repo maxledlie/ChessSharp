@@ -1,0 +1,75 @@
+data/Move.cs.i
+data/bin/Debug/Chess Sharp.exe.i
+data/ISquare.cs.i
+data/MainForm.resx.i
+data/Resources/WhiteBishop.png.i
+data/IGameModel.cs.i
+data/Resources/WhiteRook.png.i
+data/Board.cs.i
+data/bin/Debug/Chess Sharp.vshost.exe.manifest.i
+data/bin/Debug/Chess Sharp.pdb.d
+data/Properties/Settings.Designer.cs.i
+data/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs.i
+data/IMainView.cs.i
+data/IGridLocation.cs.i
+data/MainForm.cs.i
+data/bin/Debug/Chess Sharp.pdb.i
+data/Properties/Resources.resx.i
+data/obj/Debug/Chess Sharp.pdb.d
+data/GameForm.Designer.cs.i
+data/ImageFactory.cs.i
+data/App.config.i
+data/bin/Debug/Chess Sharp.vshost.exe.i
+data/Resources/BlackKing.png.i
+data/GamePresenter.cs.i
+data/InitialSquareFactory.cs.i
+data/Resources/BlackRook.png.i
+data/GameForm.cs.i
+data/GameForm.resx.i
+data/PieceColour.cs.i
+data/Program.cs.i
+data/Minimaxer.cs.i
+data/MainForm.Designer.cs.i
+data/obj/Debug/Chess Sharp.exe.i
+data/Resources/WhiteKing.png.i
+data/obj/Debug/DesignTimeResolveAssemblyReferences.cache.i
+data/Resources/WhitePawn.png.i
+data/Properties/Resources.Designer.cs.i
+data/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs.i
+data/PlayerType.cs.i
+data/GameModel.cs.i
+data/.hgignore.i
+data/GameSettings.cs.i
+data/Chess Sharp.csproj.i
+data/Properties/Settings.settings.i
+data/ITurn.cs.i
+data/obj/Debug/Chess_Sharp.MainForm.resources.i
+data/Resources/WhiteQueen.png.i
+data/Turn.cs.i
+data/Resources/WhiteKnight.png.i
+data/obj/Debug/Chess Sharp.csproj.FileListAbsolute.txt.i
+data/Resources/BlackQueen.png.i
+data/obj/Debug/Chess Sharp.pdb.i
+data/PieceType.cs.i
+data/obj/Debug/Chess Sharp.csproj.GenerateResource.Cache.i
+data/GridLocation.cs.i
+data/obj/Debug/Chess_Sharp.GameForm.resources.i
+data/MainModel.cs.i
+data/bin/Debug/Chess Sharp.exe.config.i
+data/MainPresenter.cs.i
+data/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll.i
+data/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs.i
+data/PieceBox.cs.i
+data/obj/Debug/Chess Sharp.csprojResolveAssemblyReference.cache.i
+data/bin/Debug/Chess Sharp.vshost.exe.config.i
+data/Square.cs.i
+data/Properties/AssemblyInfo.cs.i
+data/IMainModel.cs.i
+data/IGameView.cs.i
+data/Resources/BlackKnight.png.i
+data/Resources/BlackPawn.png.i
+data/obj/Debug/Chess_Sharp.Properties.Resources.resources.i
+data/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache.i
+data/PieceValues.cs.i
+data/Resources/NoPiece.png.i
+data/Resources/BlackBishop.png.i

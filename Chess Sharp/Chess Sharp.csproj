@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{119CFADE-912B-425F-90A4-33E40AD3053B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chess_Sharp</RootNamespace>
+    <AssemblyName>Chess Sharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Board.cs" />
+    <Compile Include="GamePresenter.cs" />
+    <Compile Include="GameSettings.cs" />
+    <Compile Include="IGridLocation.cs" />
+    <Compile Include="IMainModel.cs" />
+    <Compile Include="IMainView.cs" />
+    <Compile Include="InitialSquareFactory.cs" />
+    <Compile Include="ITurn.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainModel.cs" />
+    <Compile Include="MainPresenter.cs" />
+    <Compile Include="Minimaxer.cs" />
+    <Compile Include="Move.cs" />
+    <Compile Include="PieceColour.cs" />
+    <Compile Include="GameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameModel.cs" />
+    <Compile Include="IGameModel.cs" />
+    <Compile Include="IGameView.cs" />
+    <Compile Include="ImageFactory.cs" />
+    <Compile Include="ISquare.cs" />
+    <Compile Include="PieceBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieceType.cs" />
+    <Compile Include="PieceValues.cs" />
+    <Compile Include="PlayerType.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GridLocation.cs" />
+    <Compile Include="Square.cs" />
+    <Compile Include="Turn.cs" />
+    <Compile Include="TurnNode.cs" />
+    <EmbeddedResource Include="GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackBishop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackKnight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackPawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackQueen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackRook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoPiece.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhiteBishop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhiteKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhiteKnight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhitePawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhiteQueen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhiteRook.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
